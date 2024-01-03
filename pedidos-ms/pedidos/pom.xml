@@ -8,11 +8,11 @@
 		<version>2.6.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.mateusfood</groupId>
-	<artifactId>pagamentos-ms</artifactId>
+	<groupId>br.com.alurafood</groupId>
+	<artifactId>pedidos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>pagamentos-ms</name>
-	<description>Pagamentos MS</description>
+	<name>pedidos</name>
+	<description>MS de Pedidos do Alura Food</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -33,6 +33,7 @@
 			<groupId>org.flywaydb</groupId>
 			<artifactId>flyway-core</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -54,17 +55,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.modelmapper</groupId>
-			<artifactId>modelmapper</artifactId>
-			<version>3.1.0</version>
-		</dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>3.1.2</version>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>3.1.0</version>
         </dependency>
-    </dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<version>3.1.2</version>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<plugins>
